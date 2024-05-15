@@ -15,10 +15,15 @@ function MovieModal(props) {
 
     const addToFavorites = async () => {
         const movieData = {
-            title: props.clickedItem.MovieName,
-            // release_year: props.clickedItem.Movieyear,
-            comments: comment
+            id: props.clickedItem.key,
+            original_title: props.clickedItem.MovieName,
+            release_date: props.clickedItem.Movieyear,
+            poster_path: props.clickedItem.MovieImage,
+            overview: props.clickedItem.Movieinfo,
+            comment: comment
+        
         };
+        console.log(movieData.id)
         try {
             // Send the movie data along with the comment to the backend
             const response = await axios.post('http://localhost:3000/addMovie', movieData);

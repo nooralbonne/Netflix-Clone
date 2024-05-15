@@ -1,11 +1,9 @@
-// MovieList.js
 import React from 'react';
 import Movie from '../Movie/Movie'; // Import Movie component
 import './MovieList.css'; // Import CSS file
 
 function MovieList(props) {
     console.log(props.movieArr); 
-
     return (
         <div className="Movie-container">
             {props.movieArr.map((item) => (
@@ -20,5 +18,4 @@ function MovieList(props) {
         </div>
     );
 }
-
 export default MovieList;
