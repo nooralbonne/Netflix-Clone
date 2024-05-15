@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #444;
+    background: linear-gradient(to right bottom, #A9C9FF 0%, #FFBBEC 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px 70px 30px; /* Add padding to all sides of the body */
+}
+
+.movie {
+    max-width: 800px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 5px 20px 10px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+.movie__hero {
+    flex: 0 0 45%;
+}
+
+.movie__img {
+    width: 100%;
+    display: block;
+}
+
+.movie__content {
+    background-color: #fff;
+    flex: 1;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie__price {
+    background: linear-gradient(to bottom, #A9C9FF 0%, #FFBBEC 100%);
+    flex: 0 0 50px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.heading__primary {
+    font-size: 16px;
+    margin-right: auto;
+    color: royalblue;
+}
+
+.movie__tag {
+    font-size: 10px;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 100px;
+    margin-right: 8px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.movie__tag--1 {
+    background-color: #A9C9FF;
+}
+
+.movie__tag--2 {
+    background-color: #FFBBEC;
+}
+
+.movie__description {
+    font-size: 14px;
+}
+/* ============================ */
+
+
+/* Button styling */
+.btn-shared, .btn-shared:focus, .full-width-btn {
+    border-radius: 0%;
+    background-color: #1892BF;
+    color: #f8f8f8;
+    border-color: #1892BF;
+    margin: 0px 3px;
+    padding: 7px 14px;
+    width: 100%; /* Make the button take the full width */
+    margin: 10px 0; /* Adjust margin as needed */
+    /* position: static; */
+}
+
+.btn-shared:hover {
+    background: #fcfdfd;
+    color:#1892BF;
+}
+
+/* ======================= */
+

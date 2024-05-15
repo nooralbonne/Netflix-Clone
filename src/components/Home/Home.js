@@ -5,6 +5,7 @@ function Home() {
     const [movieArr, setMoviesArr] = useState([]);
 
     const sendReq = async () => {
+        // const serverURL = `${process.env.REACT_APP_serverURL}/trending`;
         const serverURL = `http://localhost:3000/trending`;
         const res = await fetch(serverURL);
         const jsonRes = await res.json();
@@ -19,13 +20,12 @@ function Home() {
     return (
         <>
             <h1 style={{
-                textAlign: 'center',
-                padding: '40px',
+                padding: '80px 80px 30px 80px',
                 color: 'transparent',
                 backgroundImage: 'linear-gradient(to left, #553c9a, #b393d3)',
                 backgroundClip: 'text',
                 WebkitBackgroundClip: 'text'
-            }}>Netflix Movies</h1>
+            }}> </h1>
             <MovieList movieArr={movieArr} />
         </>
     )
